@@ -2,9 +2,7 @@ FROM debian:stable-slim
 LABEL Description="Web Stress"
 
 RUN apt update && \
-    apt install -y stress curl nginx php-fpm && \
-    mkdir -p /run/nginx && \
-    mkdir -p /run/php
+    apt install -y stress curl nginx php-fpm
 
 ADD www /www
 ADD nginx.conf /etc/nginx/nginx.conf
