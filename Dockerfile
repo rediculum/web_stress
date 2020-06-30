@@ -7,7 +7,8 @@ RUN apt update && \
     mkdir -p /run/php
 
 ADD www /www
-ADD default.conf /etc/nginx/sites-enabled/default
+ADD nginx.conf /etc/nginx/nginx.conf
+ADD php-fpm.conf /etc/php/7.3/fpm/php-fpm.conf
 ADD run.sh /run.sh
 
 EXPOSE 80
