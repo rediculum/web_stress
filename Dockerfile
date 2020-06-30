@@ -3,7 +3,8 @@ LABEL Description="Web Stress"
 
 RUN apt update && \
     apt install -y stress curl nginx php-fpm && \
-    chmod 777 /var/lib/nginx
+    chmod 777 /var/lib/nginx && \
+    chmod -R 777 /var/log/nginx
 
 ADD www /www
 ADD nginx.conf /etc/nginx/nginx.conf
