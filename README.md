@@ -12,7 +12,9 @@ You can call up the website by your browser and submit the values given by the f
 - timeout: duration in seconds how long the stress should run
 
 Example with 5s delay, firing one CPU for 10s:
-```curl http://web_stress_host/?delay=5&cpu=1&timeout=10```
+```
+curl http://web_stress_host/?delay=5&cpu=1&timeout=10
+```
 
 ## OpenShift
 ### Resources
@@ -87,6 +89,7 @@ spec:
     kind: ReplicationController
     name: web-stress
   targetCPUUtilizationPercentage: 90
+```
 ## Todo
 - Implmenet memory stress
 
