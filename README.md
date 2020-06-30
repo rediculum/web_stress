@@ -89,3 +89,11 @@ spec:
   targetCPUUtilizationPercentage: 90
 ## Todo
 - Implmenet memory stress
+
+## License
+This project is licensed under the GNU Affero General Public License v3.0 License - see the [LICENSE](LICENSE)
+ file for details
+
+## Authors
+* **Roland Hansmann** - *Initial work* - [Roland Hansmann](https://github.com/rediculum)
+
