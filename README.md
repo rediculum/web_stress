@@ -13,7 +13,7 @@ You can call up the website by your browser and submit the values given by the f
 
 Example with 5s delay, firing one CPU for 10s:
 ```
-curl http://web_stress_host/?delay=5&cpu=1&timeout=10
+curl "http://localhost:8000/?delay=5&cpu=1&timeout=10&submit=send"
 ```
 
 ## OpenShift
