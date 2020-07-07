@@ -13,7 +13,7 @@ You can call up the website by your browser and submit the values given by the f
 
 Example with 5s delay, firing one CPU for 10s:
 ```
-curl "http://localhost:8000/?delay=5&cpu=1&timeout=10&submit=send"
+curl "http://localhost:8000/?delay=5&cpu=1&timeout=10&submit"
 ```
 
 ## OpenShift
@@ -91,7 +91,7 @@ spec:
   targetCPUUtilizationPercentage: 90
 ```
 ## Todo
-- Implmenet memory stress
+- Implement memory stress
 
 ## License
 This project is licensed under the GNU Affero General Public License v3.0 License - see the [LICENSE](LICENSE)
