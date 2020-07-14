@@ -53,7 +53,7 @@ function stress(int $delay, int $cpu, int $timeout) {
 
 }
 
-if (isset($_REQUEST[submit])) {
+if (isset($_REQUEST['submit'])) {
   echo "Stressed your server after ";
   echo "$_REQUEST[delay]";
   echo "s with ";
