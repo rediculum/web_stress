@@ -67,6 +67,8 @@ apiVersion: v1
 kind: Route
 metadata:
   name: web-stress
+  annotations:
+    haproxy.router.openshift.io/timeout: 60s
 spec:
   to:
     kind: Service
